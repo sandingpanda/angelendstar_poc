@@ -1,0 +1,87 @@
+﻿Build started 3/6/2016 8:33:59 PM.
+     1>Project "F:\Programming - C++\visualstudio_workspace\ae_proof\ae_proof\ae_proof.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AudioPlayer.cpp BackgroundTile.cpp BulletBase.cpp EnemyBoss.cpp EnemyBullet.cpp EnemyJet.cpp EnemyWalker.cpp Entity.cpp EntityList.cpp Game.cpp Graphics.cpp HeroBase.cpp HeroBulletBlade.cpp HeroBulletBlast.cpp HeroBulletMain.cpp HeroBulletSecondary.cpp HeroOne.cpp HeroTwo.cpp Main.cpp Map.cpp PhysicsEngine.cpp Player.cpp Room.cpp SDLSystem.cpp Screen.cpp Sprite.cpp SpriteList.cpp TextField.cpp TextList.cpp TextObject.cpp TextureList.cpp Tile.cpp TitleScreen.cpp
+         SDLSystem.cpp
+     1>f:\programming - c++\visualstudio_workspace\ae_proof\ae_proof\sdlsystem.cpp(102): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Game.cpp
+         AudioPlayer.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         TitleScreen.cpp
+         Tile.cpp
+         TextureList.cpp
+         TextObject.cpp
+         TextList.cpp
+         TextField.cpp
+         SpriteList.cpp
+         Sprite.cpp
+         Screen.cpp
+         Room.cpp
+         Player.cpp
+         PhysicsEngine.cpp
+         Map.cpp
+         Main.cpp
+         HeroTwo.cpp
+         HeroOne.cpp
+         HeroBulletSecondary.cpp
+         HeroBulletMain.cpp
+         HeroBulletBlast.cpp
+         HeroBulletBlade.cpp
+         HeroBase.cpp
+         Graphics.cpp
+         EntityList.cpp
+         Entity.cpp
+         EnemyWalker.cpp
+         EnemyJet.cpp
+         EnemyBullet.cpp
+         EnemyBoss.cpp
+         BulletBase.cpp
+         BackgroundTile.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Programming - C++\visualstudio_workspace\ae_proof\Debug\ae_proof.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_mixer.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Programming - C++\visualstudio_workspace\ae_proof\Debug\ae_proof.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Programming - C++\visualstudio_workspace\ae_proof\Debug\ae_proof.lib" /MACHINE:X86 Debug\AudioPlayer.obj
+         Debug\BackgroundTile.obj
+         Debug\BulletBase.obj
+         Debug\EnemyBoss.obj
+         Debug\EnemyBullet.obj
+         Debug\EnemyJet.obj
+         Debug\EnemyWalker.obj
+         Debug\Entity.obj
+         Debug\FontLoader.obj
+         Debug\Formation.obj
+         Debug\Game.obj
+         Debug\GameRect.obj
+         Debug\GameTexture.obj
+         Debug\Graphics.obj
+         Debug\HeroBase.obj
+         Debug\HeroBulletBlade.obj
+         Debug\HeroBulletBlast.obj
+         Debug\HeroBulletMain.obj
+         Debug\HeroBulletSecondary.obj
+         Debug\HeroOne.obj
+         Debug\HeroTwo.obj
+         Debug\InputInterface.obj
+         Debug\InputProtocol.obj
+         Debug\Main.obj
+         Debug\Map.obj
+         Debug\PhysicsEngine.obj
+         Debug\Player.obj
+         Debug\Room.obj
+         Debug\Screen.obj
+         Debug\SDLSystem.obj
+         Debug\SFXLibrary.obj
+         Debug\Sprite.obj
+         Debug\SpriteList.obj
+         Debug\TextField.obj
+         Debug\TextList.obj
+         Debug\TextObject.obj
+         Debug\TextureList.obj
+         Debug\Tile.obj
+         Debug\TitleScreen.obj
+         Debug\EntityList.obj
+         ae_proof.vcxproj -> F:\Programming - C++\visualstudio_workspace\ae_proof\Debug\ae_proof.exe
+     1>Done Building Project "F:\Programming - C++\visualstudio_workspace\ae_proof\ae_proof\ae_proof.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.89

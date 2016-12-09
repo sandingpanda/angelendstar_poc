@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5270394-E462-43F5-9EC2-CCA3E2233666}</ProjectGuid>
+    <RootNamespace>ae_proof</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>F:\Programming - C++\SDL Library\SDL2_mixer-2.0.0\include;F:\Programming - C++\SDL Library\SDL2_ttf-2.0.12\include;F:\Programming - C++\SDL Library\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Programming - C++\SDL Library\SDL2_mixer-2.0.0\lib\x86;F:\Programming - C++\SDL Library\SDL2_ttf-2.0.12\lib\x86;F:\Programming - C++\SDL Library\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>F:\Programming - C++\SDL Library\SDL2_ttf-2.0.12\include;F:\Programming - C++\SDL Library\SDL2_mixer-2.0.0\include;F:\Programming - C++\SDL Library\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Programming - C++\SDL Library\SDL2_mixer-2.0.0\lib\x86;F:\Programming - C++\SDL Library\SDL2_ttf-2.0.12\lib\x86;F:\Programming - C++\SDL Library\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioPlayer.cpp" />
+    <ClCompile Include="BackgroundTile.cpp" />
+    <ClCompile Include="BulletBase.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
+    <ClCompile Include="EnemyBullet.cpp" />
+    <ClCompile Include="EnemyJet.cpp" />
+    <ClCompile Include="EnemyWalker.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FontLoader.cpp" />
+    <ClCompile Include="Formation.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameRect.cpp" />
+    <ClCompile Include="GameTexture.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="HeroBase.cpp" />
+    <ClCompile Include="HeroBulletBlade.cpp" />
+    <ClCompile Include="HeroBulletBlast.cpp" />
+    <ClCompile Include="HeroBulletMain.cpp" />
+    <ClCompile Include="HeroBulletSecondary.cpp" />
+    <ClCompile Include="HeroOne.cpp" />
+    <ClCompile Include="HeroTwo.cpp" />
+    <ClCompile Include="InputInterface.cpp" />
+    <ClCompile Include="InputProtocol.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="PhysicsEngine.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="SDLSystem.cpp" />
+    <ClCompile Include="SFXLibrary.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteList.cpp" />
+    <ClCompile Include="TextField.cpp" />
+    <ClCompile Include="TextList.cpp" />
+    <ClCompile Include="TextObject.cpp" />
+    <ClCompile Include="TextureList.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TitleScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioPlayer.h" />
+    <ClInclude Include="BackgroundTile.h" />
+    <ClInclude Include="BulletBase.h" />
+    <ClInclude Include="EnemyBoss.h" />
+    <ClInclude Include="EnemyBullet.h" />
+    <ClInclude Include="EnemyJet.h" />
+    <ClInclude Include="EnemyWalker.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityList.h" />
+    <ClInclude Include="FontLoader.h" />
+    <ClInclude Include="Formation.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameRect.h" />
+    <ClInclude Include="GameTexture.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="HeroBase.h" />
+    <ClInclude Include="HeroBulletBlade.h" />
+    <ClInclude Include="HeroBulletBlast.h" />
+    <ClInclude Include="HeroBulletMain.h" />
+    <ClInclude Include="HeroBulletSecondary.h" />
+    <ClInclude Include="HeroOne.h" />
+    <ClInclude Include="HeroTwo.h" />
+    <ClInclude Include="InputInterface.h" />
+    <ClInclude Include="InputProtocol.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="PhysicsEngine.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="SFXLibrary.h" />
+    <ClInclude Include="SpriteList.h" />
+    <ClInclude Include="SDLSystem.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="TextField.h" />
+    <ClInclude Include="TextList.h" />
+    <ClInclude Include="TextObject.h" />
+    <ClInclude Include="TextureList.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TitleScreen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EntityList.cpp">
+      <FileType>Document</FileType>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
